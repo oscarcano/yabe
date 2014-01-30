@@ -1,0 +1,589 @@
+28 ene 2014 14:38:39,860 INFO  ~ Starting /home/oscar/NetBeansProjects/apps/yabe
+28 ene 2014 14:38:39,878 INFO  ~ Module crud is available (/home/oscar/apps/play-1.2.7/modules/crud)
+28 ene 2014 14:38:42,808 WARN  ~ You're running Play! in DEV mode
+28 ene 2014 14:38:43,132 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+28 ene 2014 14:39:05,843 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+28 ene 2014 14:39:10,393 INFO  ~ Application 'yabe' is now started !
+28 ene 2014 14:39:15,526 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:39:16,293 DEBUG ~ select user0_.id as id1_, user0_.email as email1_, user0_.fullName as fullName1_, user0_.isAdmin as isAdmin1_, user0_.municipio as municipio1_, user0_.pass as pass1_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:39:16,332 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:39:20,125 DEBUG ~ select post0_.id as id2_, post0_.author_id as author5_2_, post0_.content as content2_, post0_.postedAt as postedAt2_, post0_.title as title2_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 14:39:20,146 DEBUG ~ select post0_.id as id2_, post0_.author_id as author5_2_, post0_.content as content2_, post0_.postedAt as postedAt2_, post0_.title as title2_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 14:39:20,175 DEBUG ~ select user0_.id as id1_0_, user0_.email as email1_0_, user0_.fullName as fullName1_0_, user0_.isAdmin as isAdmin1_0_, user0_.municipio as municipio1_0_, user0_.pass as pass1_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:40:10,404 DEBUG ~ select post0_.id as id2_, post0_.author_id as author5_2_, post0_.content as content2_, post0_.postedAt as postedAt2_, post0_.title as title2_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 14:40:10,414 DEBUG ~ select post0_.id as id2_, post0_.author_id as author5_2_, post0_.content as content2_, post0_.postedAt as postedAt2_, post0_.title as title2_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 14:40:10,430 DEBUG ~ select user0_.id as id1_0_, user0_.email as email1_0_, user0_.fullName as fullName1_0_, user0_.isAdmin as isAdmin1_0_, user0_.municipio as municipio1_0_, user0_.pass as pass1_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:47:48,165 DEBUG ~ select post0_.id as id2_, post0_.author_id as author5_2_, post0_.content as content2_, post0_.postedAt as postedAt2_, post0_.title as title2_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 14:47:48,171 DEBUG ~ select post0_.id as id2_, post0_.author_id as author5_2_, post0_.content as content2_, post0_.postedAt as postedAt2_, post0_.title as title2_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 14:47:48,177 DEBUG ~ select user0_.id as id1_0_, user0_.email as email1_0_, user0_.fullName as fullName1_0_, user0_.isAdmin as isAdmin1_0_, user0_.municipio as municipio1_0_, user0_.pass as pass1_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:47:50,284 ERROR ~ 
+
+@6h4h9da9f
+Internal Server Error (500) for request GET /
+
+Template compilation error (In /app/views/Application/index.html around line 29)
+The template /app/views/Application/index.html does not compile : unexpected token: as 
+
+play.exceptions.TemplateCompilationException: unexpected token: as 
+	at play.templates.GroovyTemplate.compile(GroovyTemplate.java:189)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:210)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Application.index(Application.java:19)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+28 ene 2014 14:48:26,669 DEBUG ~ select post0_.id as id2_, post0_.author_id as author5_2_, post0_.content as content2_, post0_.postedAt as postedAt2_, post0_.title as title2_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 14:48:26,674 DEBUG ~ select post0_.id as id2_, post0_.author_id as author5_2_, post0_.content as content2_, post0_.postedAt as postedAt2_, post0_.title as title2_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 14:48:26,679 DEBUG ~ select user0_.id as id1_0_, user0_.email as email1_0_, user0_.fullName as fullName1_0_, user0_.isAdmin as isAdmin1_0_, user0_.municipio as municipio1_0_, user0_.pass as pass1_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:48:43,241 DEBUG ~ select post0_.id as id2_, post0_.author_id as author5_2_, post0_.content as content2_, post0_.postedAt as postedAt2_, post0_.title as title2_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 14:48:43,246 DEBUG ~ select post0_.id as id2_, post0_.author_id as author5_2_, post0_.content as content2_, post0_.postedAt as postedAt2_, post0_.title as title2_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 14:48:43,252 DEBUG ~ select user0_.id as id1_0_, user0_.email as email1_0_, user0_.fullName as fullName1_0_, user0_.isAdmin as isAdmin1_0_, user0_.municipio as municipio1_0_, user0_.pass as pass1_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:49:13,830 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:49:13,837 DEBUG ~ select user0_.id as id1_, user0_.email as email1_, user0_.fullName as fullName1_, user0_.isAdmin as isAdmin1_, user0_.municipio as municipio1_, user0_.pass as pass1_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:49:13,844 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:49:14,835 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:49:14,841 DEBUG ~ select user0_.id as id1_, user0_.email as email1_, user0_.fullName as fullName1_, user0_.isAdmin as isAdmin1_, user0_.municipio as municipio1_, user0_.pass as pass1_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:49:14,848 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:49:15,158 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:49:15,163 DEBUG ~ select user0_.id as id1_, user0_.email as email1_, user0_.fullName as fullName1_, user0_.isAdmin as isAdmin1_, user0_.municipio as municipio1_, user0_.pass as pass1_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:49:15,170 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:49:15,548 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:49:15,554 DEBUG ~ select user0_.id as id1_, user0_.email as email1_, user0_.fullName as fullName1_, user0_.isAdmin as isAdmin1_, user0_.municipio as municipio1_, user0_.pass as pass1_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:49:15,562 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:49:17,359 DEBUG ~ select post0_.id as id2_, post0_.author_id as author5_2_, post0_.content as content2_, post0_.postedAt as postedAt2_, post0_.title as title2_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 14:49:17,373 DEBUG ~ select user0_.id as id1_0_, user0_.email as email1_0_, user0_.fullName as fullName1_0_, user0_.isAdmin as isAdmin1_0_, user0_.municipio as municipio1_0_, user0_.pass as pass1_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:49:17,388 DEBUG ~ select user0_.id as id1_0_, user0_.email as email1_0_, user0_.fullName as fullName1_0_, user0_.isAdmin as isAdmin1_0_, user0_.municipio as municipio1_0_, user0_.pass as pass1_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:49:17,397 DEBUG ~ select user0_.id as id1_0_, user0_.email as email1_0_, user0_.fullName as fullName1_0_, user0_.isAdmin as isAdmin1_0_, user0_.municipio as municipio1_0_, user0_.pass as pass1_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:49:17,406 DEBUG ~ select user0_.id as id1_0_, user0_.email as email1_0_, user0_.fullName as fullName1_0_, user0_.isAdmin as isAdmin1_0_, user0_.municipio as municipio1_0_, user0_.pass as pass1_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:49:17,414 DEBUG ~ select post0_.id as id2_, post0_.author_id as author5_2_, post0_.content as content2_, post0_.postedAt as postedAt2_, post0_.title as title2_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 14:49:17,423 DEBUG ~ select user0_.id as id1_0_, user0_.email as email1_0_, user0_.fullName as fullName1_0_, user0_.isAdmin as isAdmin1_0_, user0_.municipio as municipio1_0_, user0_.pass as pass1_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:50:02,056 ERROR ~ 
+
+@6h4h9da9k
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/BasicTest.java around line 26)
+The file /test/BasicTest.java could not be compiled. Error raised is : Invalid character constant
+
+play.exceptions.CompilationException: Invalid character constant
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:478)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:281)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:324)
+	at play.Play.detectChanges(Play.java:632)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+28 ene 2014 14:50:25,919 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:50:25,947 DEBUG ~ select user0_.id as id7_, user0_.email as email7_, user0_.fullName as fullName7_, user0_.isAdmin as isAdmin7_, user0_.municipio as municipio7_, user0_.pass as pass7_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:50:25,975 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:50:26,493 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:50:26,499 DEBUG ~ select user0_.id as id7_, user0_.email as email7_, user0_.fullName as fullName7_, user0_.isAdmin as isAdmin7_, user0_.municipio as municipio7_, user0_.pass as pass7_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:50:26,508 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:50:26,887 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:50:26,893 DEBUG ~ select user0_.id as id7_, user0_.email as email7_, user0_.fullName as fullName7_, user0_.isAdmin as isAdmin7_, user0_.municipio as municipio7_, user0_.pass as pass7_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:50:26,902 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:50:27,236 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:50:27,242 DEBUG ~ select user0_.id as id7_, user0_.email as email7_, user0_.fullName as fullName7_, user0_.isAdmin as isAdmin7_, user0_.municipio as municipio7_, user0_.pass as pass7_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:50:27,249 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:50:28,422 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:50:28,428 DEBUG ~ select user0_.id as id7_, user0_.email as email7_, user0_.fullName as fullName7_, user0_.isAdmin as isAdmin7_, user0_.municipio as municipio7_, user0_.pass as pass7_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:50:28,437 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:50:28,795 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:50:28,801 DEBUG ~ select user0_.id as id7_, user0_.email as email7_, user0_.fullName as fullName7_, user0_.isAdmin as isAdmin7_, user0_.municipio as municipio7_, user0_.pass as pass7_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:50:28,809 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:50:32,410 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 14:50:32,438 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:50:32,448 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:50:32,454 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:50:32,460 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:50:32,467 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:50:32,486 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 14:50:32,498 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:01,341 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 14:53:01,350 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:01,357 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:01,363 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:01,369 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:01,377 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:01,384 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 14:53:01,389 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:11,631 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 14:53:11,649 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:11,655 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:11,661 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:11,669 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:11,675 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:11,681 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 14:53:11,686 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:43,578 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 14:53:43,591 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:43,598 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:43,605 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:43,614 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:43,622 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:53:43,628 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 14:53:43,633 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:54:54,985 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:54:54,990 DEBUG ~ select user0_.id as id7_, user0_.email as email7_, user0_.fullName as fullName7_, user0_.isAdmin as isAdmin7_, user0_.municipio as municipio7_, user0_.pass as pass7_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:54:55,007 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:54:55,356 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:54:55,361 DEBUG ~ select user0_.id as id7_, user0_.email as email7_, user0_.fullName as fullName7_, user0_.isAdmin as isAdmin7_, user0_.municipio as municipio7_, user0_.pass as pass7_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:54:55,368 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:54:55,675 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:54:55,683 DEBUG ~ select user0_.id as id7_, user0_.email as email7_, user0_.fullName as fullName7_, user0_.isAdmin as isAdmin7_, user0_.municipio as municipio7_, user0_.pass as pass7_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:54:55,691 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:54:56,700 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:54:56,708 DEBUG ~ select user0_.id as id7_, user0_.email as email7_, user0_.fullName as fullName7_, user0_.isAdmin as isAdmin7_, user0_.municipio as municipio7_, user0_.pass as pass7_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:54:56,714 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:54:57,023 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:54:57,028 DEBUG ~ select user0_.id as id7_, user0_.email as email7_, user0_.fullName as fullName7_, user0_.isAdmin as isAdmin7_, user0_.municipio as municipio7_, user0_.pass as pass7_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:54:57,033 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:54:57,357 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 14:54:57,365 DEBUG ~ select user0_.id as id7_, user0_.email as email7_, user0_.fullName as fullName7_, user0_.isAdmin as isAdmin7_, user0_.municipio as municipio7_, user0_.pass as pass7_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 14:54:57,373 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 14:55:00,266 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 14:55:00,282 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:55:00,288 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:55:00,293 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:55:00,299 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:55:00,306 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:55:00,311 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:55:00,316 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:55:00,321 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:55:00,326 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:55:00,331 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 14:55:00,338 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 14:55:00,345 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:05:35,006 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 15:05:35,022 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:05:35,027 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:05:35,032 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:05:35,037 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:05:35,042 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:05:35,051 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:05:35,056 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:05:35,061 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:05:35,067 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:05:35,071 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:05:35,076 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 15:05:35,081 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:09,677 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 15:08:09,694 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:09,700 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:09,707 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:09,713 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:09,719 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:09,724 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:09,729 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:09,733 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:09,739 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:09,746 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:09,754 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 15:08:09,761 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:42,187 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 15:08:42,206 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:42,211 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:42,216 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:42,223 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:42,230 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:42,235 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:42,240 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:42,244 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:42,249 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:42,255 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:08:42,263 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 15:08:42,268 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:11:22,501 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ? offset ?
+28 ene 2014 15:11:22,519 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:11:22,525 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:11:22,530 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:11:22,535 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:11:22,540 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:11:22,546 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:11:22,550 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:11:22,556 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:11:22,560 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:11:22,565 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:11:22,572 DEBUG ~ select post0_.id as id8_, post0_.author_id as author5_8_, post0_.content as content8_, post0_.postedAt as postedAt8_, post0_.title as title8_ from Post post0_ order by post0_.postedAt desc limit ?
+28 ene 2014 15:11:22,578 DEBUG ~ select user0_.id as id7_0_, user0_.email as email7_0_, user0_.fullName as fullName7_0_, user0_.isAdmin as isAdmin7_0_, user0_.municipio as municipio7_0_, user0_.pass as pass7_0_ from User user0_ where user0_.id=?
+28 ene 2014 15:32:56,611 ERROR ~ 
+
+@6h4h9daa8
+Sessions.open action not found
+
+Action not found
+Action Sessions.open could not be found. Error raised is null
+
+play.exceptions.ActionNotFoundException: Action Sessions.open not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:615)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at java.lang.Class.isAssignableFrom(Native Method)
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:604)
+	... 2 more
+28 ene 2014 15:33:25,397 ERROR ~ 
+
+@6h4h9daaa
+Internal Server Error (500) for request GET /sessions/new
+
+Template not found (In /app/controllers/Sessions.java around line 17)
+The template Sessions/open.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Sessions/open.html
+	at play.mvc.Controller.renderTemplate(Controller.java:671)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Sessions.open(Sessions.java:17)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+28 ene 2014 15:36:17,190 ERROR ~ 
+
+@6h4h9daac
+Internal Server Error (500) for request GET /sessions/new
+
+Template not found (In /app/controllers/Sessions.java around line 17)
+The template Sessions/open.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Sessions/open.html
+	at play.mvc.Controller.renderTemplate(Controller.java:671)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Sessions.open(Sessions.java:17)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+28 ene 2014 15:36:22,402 ERROR ~ 
+
+@6h4h9daae
+Internal Server Error (500) for request GET /sessions/new
+
+Template not found (In /app/controllers/Sessions.java around line 17)
+The template Sessions/open.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Sessions/open.html
+	at play.mvc.Controller.renderTemplate(Controller.java:671)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Sessions.open(Sessions.java:17)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+28 ene 2014 15:36:44,055 ERROR ~ 
+
+@6h4h9daag
+Internal Server Error (500) for request GET /sessions/new
+
+Template not found (In /app/controllers/Sessions.java around line 17)
+The template Sessions/open.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Sessions/open.html
+	at play.mvc.Controller.renderTemplate(Controller.java:671)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Sessions.open(Sessions.java:17)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+28 ene 2014 15:36:54,380 ERROR ~ 
+
+@6h4h9daah
+Sessions.new action not found
+
+Action not found
+Action Sessions.new could not be found. Error raised is No method public static void new() was found in class controllers.Sessions
+
+play.exceptions.ActionNotFoundException: Action Sessions.new not found
+	at play.mvc.ActionInvoker.getActionMethod(ActionInvoker.java:610)
+	at play.mvc.ActionInvoker.resolve(ActionInvoker.java:85)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.Exception: No method public static void new() was found in class controllers.Sessions
+	... 3 more
+28 ene 2014 15:37:31,438 ERROR ~ 
+
+@6h4h9daaj
+Internal Server Error (500) for request GET /sessions/new
+
+Template not found (In /app/controllers/Sessions.java around line 17)
+The template Sessions/open.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Sessions/open.html
+	at play.mvc.Controller.renderTemplate(Controller.java:671)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Sessions.open(Sessions.java:17)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+28 ene 2014 15:38:09,864 ERROR ~ 
+
+@6h4h9daal
+Internal Server Error (500) for request GET /sessions/new
+
+Template not found (In /app/controllers/Sessions.java around line 17)
+The template Sessions/open.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Sessions/open.html
+	at play.mvc.Controller.renderTemplate(Controller.java:671)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Sessions.open(Sessions.java:17)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+28 ene 2014 15:38:26,344 ERROR ~ 
+
+@6h4h9daan
+Internal Server Error (500) for request GET /sessions/new
+
+Template not found (In /app/controllers/Sessions.java around line 17)
+The template Sessions/open.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Sessions/open.html
+	at play.mvc.Controller.renderTemplate(Controller.java:671)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Sessions.open(Sessions.java:17)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+28 ene 2014 15:40:14,157 ERROR ~ 
+
+@6h4h9daap
+Internal Server Error (500) for request GET /sessions/new
+
+Template not found (In /app/controllers/Sessions.java around line 17)
+The template Sessions/open.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Sessions/open.html
+	at play.mvc.Controller.renderTemplate(Controller.java:671)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Sessions.open(Sessions.java:17)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+28 ene 2014 15:40:59,417 ERROR ~ 
+
+@6h4h9dab1
+Internal Server Error (500) for request GET /sessions/new
+
+Template not found (In /app/controllers/Sessions.java around line 17)
+The template Sessions/open.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Sessions/open.html
+	at play.mvc.Controller.renderTemplate(Controller.java:671)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Sessions.open(Sessions.java:17)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+28 ene 2014 15:48:43,648 ERROR ~ 
+
+@6h4h9dab2
+Internal Server Error (500) for request GET /sessions/new
+
+Template execution error (In /app/views/Sessions/open.html around line 4)
+Execution error occured in template /app/views/Sessions/open.html. Exception raised was NullPointerException : Cannot invoke method validate() on null object.
+
+play.exceptions.TemplateExecutionException: Cannot invoke method validate() on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Sessions.open(Sessions.java:17)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot invoke method validate() on null object
+	at /app/views/Sessions/open.html.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	... 13 more
+28 ene 2014 15:49:14,700 ERROR ~ 
+
+@6h4h9dab3
+Internal Server Error (500) for request GET /sessions/new
+
+Template execution error (In /app/views/Sessions/open.html around line 4)
+Execution error occured in template /app/views/Sessions/open.html. Exception raised was NullPointerException : Cannot invoke method validate() on null object.
+
+play.exceptions.TemplateExecutionException: Cannot invoke method validate() on null object
+	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:272)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:202)
+	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
+	at play.mvc.Controller.renderTemplate(Controller.java:662)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Sessions.open(Sessions.java:17)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException: Cannot invoke method validate() on null object
+	at /app/views/Sessions/open.html.(line:4)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:247)
+	... 13 more
+28 ene 2014 16:13:09,872 ERROR ~ 
+
+@6h4h9dab5
+Internal Server Error (500) for request POST /sessions/validate
+
+Template not found (In /app/controllers/Sessions.java around line 20)
+The template Sessions/validate.html does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : Sessions/validate.html
+	at play.mvc.Controller.renderTemplate(Controller.java:671)
+	at play.mvc.Controller.renderTemplate(Controller.java:642)
+	at play.mvc.Controller.render(Controller.java:699)
+	at controllers.Sessions.validate(Sessions.java:20)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	at Invocation.HTTP Request(Play!)
+28 ene 2014 16:42:43,918 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 16:42:43,935 DEBUG ~ select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? limit ?
+28 ene 2014 16:42:43,961 DEBUG ~ insert into Post (id, author_id, content, postedAt, title) values (null, ?, ?, ?, ?)
+28 ene 2014 16:43:16,868 DEBUG ~ insert into User (id, email, fullName, isAdmin, municipio, pass) values (null, ?, ?, ?, ?, ?)
+28 ene 2014 16:43:16,940 DEBUG ~ select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ order by user0_.id ASC limit ?
+28 ene 2014 16:43:16,981 DEBUG ~ select count(*) as col_0_0_ from User user0_ limit ?
+28 ene 2014 16:43:16,985 DEBUG ~ select count(*) as col_0_0_ from User user0_ limit ?
+28 ene 2014 16:43:34,243 DEBUG ~ select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? and password=? limit ?
+28 ene 2014 16:43:34,280 WARN  ~ SQL Error: 42122, SQLState: 42S22
+28 ene 2014 16:43:34,280 ERROR ~ Columna "PASSWORD" no encontrada
+Column "PASSWORD" not found; SQL statement:
+select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? and password=? limit ? [42122-166]
+28 ene 2014 16:43:34,518 ERROR ~ 
+
+@6h4h9dabc
+Internal Server Error (500) for request POST /sessions/validate
+
+Execution exception (In /app/models/User.java around line 43)
+JPAQueryException occured : Error while executing query from models.User where email = ? and password = ? : Columna "PASSWORD" no encontrada Column "PASSWORD" not found; SQL statement: select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? and password=? limit ? [42122-166]
+
+play.exceptions.JavaExecutionException: Error while executing query <strong>from models.User where email = ? and password = ? </strong>: Columna "PASSWORD" no encontrada
+Column "PASSWORD" not found; SQL statement:
+select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? and password=? limit ? [42122-166]
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:237)
+	at Invocation.HTTP Request(Play!)
+Caused by: play.db.jpa.JPABase$JPAQueryException: Error while executing query <strong>from models.User where email = ? and password = ? </strong>: Columna "PASSWORD" no encontrada
+Column "PASSWORD" not found; SQL statement:
+select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? and password=? limit ? [42122-166]
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:355)
+	at models.User.validateUserAndPassword(User.java:43)
+	at controllers.Sessions.validate(Sessions.java:25)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:557)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:508)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:484)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:479)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:161)
+	... 1 more
+Caused by: org.h2.jdbc.JdbcSQLException: Columna "PASSWORD" no encontrada
+Column "PASSWORD" not found; SQL statement:
+select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? and password=? limit ? [42122-166]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:138)
+	at org.h2.expression.Comparison.optimize(Comparison.java:159)
+	at org.h2.expression.ConditionAndOr.optimize(ConditionAndOr.java:127)
+	at org.h2.command.dml.Select.prepare(Select.java:802)
+	at org.h2.command.Parser.prepareCommand(Parser.java:218)
+	at org.h2.engine.Session.prepareLocal(Session.java:415)
+	at org.h2.engine.Session.prepareCommand(Session.java:364)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1111)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:71)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:266)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:534)
+	at org.hibernate.jdbc.AbstractBatcher.getPreparedStatement(AbstractBatcher.java:452)
+	at org.hibernate.jdbc.AbstractBatcher.prepareQueryStatement(AbstractBatcher.java:161)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1700)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:801)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:274)
+	at org.hibernate.loader.Loader.doList(Loader.java:2542)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2276)
+	at org.hibernate.loader.Loader.list(Loader.java:2271)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:459)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:365)
+	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1268)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:246)
+	at play.db.jpa.GenericModel$JPAQuery.first(GenericModel.java:349)
+	... 8 more
+28 ene 2014 16:45:16,144 DEBUG ~ select user0_.id as id37_0_, user0_.email as email37_0_, user0_.fullName as fullName37_0_, user0_.isAdmin as isAdmin37_0_, user0_.municipio as municipio37_0_, user0_.pass as pass37_0_ from User user0_ where user0_.id=?
+28 ene 2014 16:45:47,891 DEBUG ~ select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? and user0_.pass=? limit ?
+28 ene 2014 16:45:59,584 DEBUG ~ select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? and user0_.pass=? limit ?
+28 ene 2014 16:46:13,460 DEBUG ~ select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? and user0_.pass=? limit ?
+28 ene 2014 16:47:34,640 ERROR ~ 
+
+@6h4h9dabf
+Internal Server Error (500) for request GET /sessions/welcome
+
+Compilation error (In /app/controllers/Sessions.java around line 40)
+The file /app/controllers/Sessions.java could not be compiled. Error raised is : Invalid character constant
+
+play.exceptions.CompilationException: Invalid character constant
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:246)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:478)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:282)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:281)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:324)
+	at play.Play.detectChanges(Play.java:632)
+	at play.Invoker$Invocation.init(Invoker.java:198)
+	at Invocation.HTTP Request(Play!)
+28 ene 2014 16:48:36,893 DEBUG ~ select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? and user0_.pass=? limit ?
+28 ene 2014 16:49:01,353 DEBUG ~ select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? and user0_.pass=? limit ?
+28 ene 2014 16:51:17,970 DEBUG ~ select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? and user0_.pass=? limit ?
+28 ene 2014 16:51:26,243 DEBUG ~ select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? and user0_.pass=? limit ?
+28 ene 2014 16:51:55,331 DEBUG ~ select user0_.id as id37_, user0_.email as email37_, user0_.fullName as fullName37_, user0_.isAdmin as isAdmin37_, user0_.municipio as municipio37_, user0_.pass as pass37_ from User user0_ where user0_.email=? and user0_.pass=? limit ?

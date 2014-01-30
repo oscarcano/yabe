@@ -1,0 +1,47 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+ 
+#{if frontPost}
+<div class="post">
+    <h2 >
+        <a href="#">${frontPost?.title}</a>
+    </h2>
+    
+    <div>
+    ${frontPost?.content}
+    </div>
+    
+    <div>
+        <span>Hecho por: ${frontPost?.author}</span>
+        <br/>
+      Posteado:  ${frontPost?.postedAt}    
+        
+        
+    </div>
+    
+    
+    
+</div>
+#{/if}
+
+#{if olderPost}
+<div>
+    <ul>
+    #{list items:olderPost, as:'oldPost'}
+    <li>
+        <button class="btn btn-danger">
+            ${oldPost?.title}
+        </button>
+    <div>
+    Hecho por:    ${oldPost?.author}
+    </div>
+
+        
+    </li>
+    
+
+    
+    #{/list}
+    </ul>
+</div>
+#{/if}
